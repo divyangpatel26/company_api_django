@@ -28,3 +28,4 @@ class Employee(models.Model):
         ('Project leader', 'Project Leader'),
     ))
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
+    logo = models.ImageField(storage="media")
